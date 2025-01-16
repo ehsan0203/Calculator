@@ -1,0 +1,22 @@
+<div class="calculator">
+    <input type="text" class="calculator-screen" [value]="currentValue" disabled />
+    <div class="calculator-keys">
+        <button type="button" class="operator" (click)="handleOperator('+')">+</button>
+        <button type="button" class="operator" (click)="handleOperator('-')">-</button>
+        <button type="button" class="operator" (click)="handleOperator('*')">&times;</button>
+        <button type="button" class="operator" (click)="handleOperator('/')">&divide;</button>
+        <button type="button" (click)="appendNumber('7')">7</button>
+        <button type="button" (click)="appendNumber('8')">8</button>
+        <button type="button" (click)="appendNumber('9')">9</button>
+        <button type="button" (click)="appendNumber('4')">4</button>
+        <button type="button" (click)="appendNumber('5')">5</button>
+        <button type="button" (click)="appendNumber('6')">6</button>
+        <button type="button" (click)="appendNumber('1')">1</button>
+        <button type="button" (click)="appendNumber('2')">2</button>
+        <button type="button" (click)="appendNumber('3')">3</button>
+        <button type="button" (click)="appendNumber('0')">0</button>
+        <button type="button" (click)="appendNumber('.')">.</button>
+        <button type="button" class="all-clear" (click)="clearAll()">AC</button>
+        <button type="button" class="equal-sign" (click)="calculate()">=</button>
+    </div>
+</div>
